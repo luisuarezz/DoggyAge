@@ -14,6 +14,10 @@
             font-family: 'Inter', sans-serif;
             margin: 0;
             overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-height: 100vh;
         }
 
         header {
@@ -158,6 +162,11 @@
             display: none;
         }
 
+        .calculate-text {
+            font-size: 24px;
+            margin-top: 1rem;
+        }
+
         @media (max-width: 768px) {
             .header-title {
                 font-size: 1.2rem;
@@ -179,6 +188,10 @@
             .result-card {
                 width: 100%; 
                 height: auto;
+            }
+
+            .calculate-text {
+                font-size: 0.8rem;
             }
         }
     </style>
@@ -213,6 +226,14 @@
                     <button id="calculate" class="cta text-white mt-4 p-2 rounded w-full flex items-center justify-center text-xl md:text-4xl">
                         🐶 Calculate
                     </button>
+                     <p class="text-xs md:text-sm mt-2">
+        A real dog age calculator,
+        <a href="https://www.sciencealert.com/what-s-the-real-human-equivalent-of-your-dog-s-age-here-s-a-new-formula-to-figure-it-out"
+            target="_blank"
+            style="color: #ef6948;">
+           backed by scientific woof, I mean proof.
+        </a>
+    </p>
                 </div>
             </div>
             <div class="h-screen" id="result-container" style="display: none;">
@@ -222,8 +243,8 @@
                     <div style="width: 80%; height: 0; padding-bottom: 80%; position: relative; margin: auto;">
                         <iframe src="https://giphy.com/embed/IFjSbBHETzzr6GJdwW" width="100%" height="100%" style="position: absolute;" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
                     </div>
-                    <p><a href="https://giphy.com/gifs/happy-birthday-to-you-cute-IFjSbBHETzzr6GJdwW">via GIPHY</a></p>
-                    <button id="backButton" class="header-secondary-cta"> ↺ Try again</button>
+                    <p><a href="https://giphy.com/gifs/happy-birthday-to-you-cute-IFjSbBHETzzr6GJdwW"></a></p>
+                    <button id="backButton" class="header-secondary-cta mt-8"> ↺ Try again</button>
                 </div>
             </div>
             <div class="h-screen" id="hero-container">
